@@ -432,6 +432,7 @@ body {
 .question i {
     font-size: 25px;
     color: var(--Soft-Blue);
+    cursor: pointer;
 }
 
 .answer {
