@@ -7,7 +7,8 @@ const tab_content = document.querySelectorAll('.feature__tabs__content');
 
 const answer = document.querySelectorAll('.answer');
 const question__title = document.querySelectorAll('.question__title');
-
+const acordeon_arrows = document.querySelectorAll('.question i')
+console.log( acordeon_arrows );
 
 
 cargarEventListeners();
@@ -42,39 +43,13 @@ function cargarEventListeners() {
             }
         });
     })
-    // tab_1.addEventListener('click', (e) => {
-
-    //     if (!tab_1.classList.contains('tab--active')) {
-    //         tab_1.classList.add('tab--active');
-    //         tab_2.classList.remove('tab--active');
-    //         tab_3.classList.remove('tab--active');
-    //     }
-    // });
-
-    // tab_2.addEventListener('click', (e) => {
-
-    //     if (!tab_2.classList.contains('tab--active')) {
-    //         tab_2.classList.add('tab--active');
-    //         tab_1.classList.remove('tab--active');
-    //         tab_3.classList.remove('tab--active');
-    //     }
-    // });
-
-    // tab_3.addEventListener('click', (e) => {
-
-    //     if (!tab_3.classList.contains('tab--active')) {
-    //         tab_3.classList.add('tab--active');
-    //         tab_2.classList.remove('tab--active');
-    //         tab_1.classList.remove('tab--active');
-    //     }
-    // });
-
+   
+    
     question__title.forEach((title, i) => {
-
         title.addEventListener('click', () => {
             answer[i].classList.toggle('activo');
+            acordeon_arrows[i].classList.toggle('question__active')
         });
-    
     })
 
 }

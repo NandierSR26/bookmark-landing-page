@@ -433,6 +433,11 @@ body {
     font-size: 25px;
     color: var(--Soft-Blue);
     cursor: pointer;
+    transition: .3s all;
+}
+
+.question__active {
+    transform: rotate(180deg);
 }
 
 .answer {
